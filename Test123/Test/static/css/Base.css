@@ -1,0 +1,41 @@
+
+    .navbar {
+      margin-bottom: 72px;
+      border-radius: 0;
+    }
+
+
+
+    footer {
+      background-color: white;
+      padding: 10px;
+      font-family: "Comic Sans MS",'STFangsong', cursive ;
+      /*box-sizing: border-box;*/
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      font-size: 15px;
+      width:100%;
+    }
+    .w3-myfont {
+        font-family: "Comic Sans MS",'STFangsong', cursive ;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .w4-myfont{
+        font-family: "Comic Sans MS",'STFangsong', cursive ;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+
+    h1 {
+        color: #FCA205;
+        }
+    h2  {
+        color: #db065f;
+        }
+
+    p    {color: #0086ff;}
+
+

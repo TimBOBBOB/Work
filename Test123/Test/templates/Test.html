@@ -1,0 +1,42 @@
+{% extends 'Base/Base.html' %}
+{% load staticfiles %}
+{% block title %}ALCPT測驗系統-首頁{% endblock %}
+{% block content %}
+{% include 'Base/Test_Nav.html' %}
+{% include 'Base/ShowTime.html' %}
+{#{% if NOWUser.Username != NOWUser.FullName %}#}
+
+{#<!DOCTYPE html>#}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("../static/images/bg3.jpg");
+            background-size:cover;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1 align="center" ><strong>公告</strong></h1>
+      <table style="width:70%" border="3" align="center">
+        <thead>
+          <tr class="w3-light-grey w3-center w3-card-4">
+            <th><h4>公告時間</h4></th>
+            <th><h4>公告內容</h4></th>
+          </tr>
+        </thead>
+          {% for Post in Post %}
+        <tr class="w3-hover-green w3-center">
+        <td>{{ Post.created }}</td>
+        <td>{{ Post.text }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+</body>
+</html>
+{% endblock %}
